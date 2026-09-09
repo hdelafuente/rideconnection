@@ -1,0 +1,61 @@
+---
+// Placeholder de imagen: cuadro gris con la proporción/tamaño sugerido.
+// Reemplazar por <Image /> de Astro cuando existan las imágenes reales.
+interface Props {
+  width: number;
+  height: number;
+  alt?: string;
+  class?: string;
+  rounded?: boolean;
+  dark?: boolean;
+}
+
+const {
+  width,
+  height,
+  alt = '',
+  class: className = '',
+  rounded = false,
+  dark = false,
+} = Astro.props;
+
+const ratio = `${width} / ${height}`;
+---
+
+<div
+  role="img"
+  aria-label={alt}
+  class:list={[
+    'ph relative flex items-center justify-center overflow-hidden',
+    rounded && 'rounded-xl',
+    dark ? 'ph--dark' : 'ph--light',
+    className,
+  ]}
+  style={`aspect-ratio: ${ratio};`}
+>
+  <svg
+    class="absolute opacity-30"
+    width="72"
+    height="72"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.5"
+  >
+    <path d="M3 18l5-9 4 6 3-4 6 7z" />
+    <circle cx="8" cy="6" r="2" />
+  </svg>
+  <span class="relative z-10 font-sans text-xs">{width} × {height}</span>
+</div>
+
+<style>
+  .ph--light {
+    background: #dadada;
+    border: 1px solid #c9c9c9;
+    color: #8a8a90;
+  }
+  .ph--dark {
+    background: #26262a;
+    color: #55555c;
+  }
+</style>

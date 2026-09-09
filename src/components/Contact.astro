@@ -1,0 +1,83 @@
+---
+import Placeholder from './Placeholder.astro';
+import type { Content } from '../i18n/utils';
+
+interface Props {
+  contact: Content['contact'];
+}
+
+const { contact } = Astro.props;
+---
+
+<section id="contacto" class="bg-gray-soft py-20 md:py-24">
+  <div class="container-x">
+    <div class="mx-auto mb-12 max-w-xl text-center">
+      <p class="eyebrow mb-3">{contact.eyebrow}</p>
+      <h2 class="section-title mb-4">{contact.title}</h2>
+      <p class="text-muted">{contact.intro}</p>
+    </div>
+
+    <div class="grid gap-10 rounded-2xl border border-line bg-white p-8 md:grid-cols-[1.2fr_1fr] md:p-11">
+      <!-- Formulario (maquetado, sin backend) -->
+      <form
+        class="flex flex-col"
+        onsubmit="event.preventDefault();"
+        aria-label={contact.title}
+      >
+        <div class="mb-4 flex flex-col gap-4 sm:flex-row">
+          <label class="flex-1">
+            <span class="field-label">{contact.form.name}</span>
+            <input type="text" name="name" autocomplete="name" class="field" />
+          </label>
+          <label class="flex-1">
+            <span class="field-label">{contact.form.email}</span>
+            <input type="email" name="email" autocomplete="email" class="field" />
+          </label>
+        </div>
+        <label class="mb-5 block">
+          <span class="field-label">{contact.form.message}</span>
+          <textarea name="message" rows="5" class="field resize-none"></textarea>
+        </label>
+        <button type="submit" class="btn btn-dark self-start">{contact.form.submit}</button>
+      </form>
+
+      <!-- Datos de contacto -->
+      <div class="md:border-l md:border-line md:pl-10">
+        <h3 class="mb-5 text-xl uppercase">{contact.infoTitle}</h3>
+        <ul class="space-y-4 text-[15px] text-muted">
+          <li class="flex items-center gap-3">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1E6FE0" stroke-width="2">
+              <rect x="3" y="5" width="18" height="14" rx="2" />
+              <path d="M3 7l9 6 9-6" />
+            </svg>
+            <a href={`mailto:${contact.email}`} class="hover:text-accent">{contact.email}</a>
+          </li>
+          <li class="flex items-center gap-3">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1E6FE0" stroke-width="2">
+              <path d="M5 4h4l2 5-3 2a11 11 0 005 5l2-3 5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z" />
+            </svg>
+            <a href={`tel:${contact.phone.replace(/\s/g, '')}`} class="hover:text-accent">
+              {contact.phone}
+            </a>
+          </li>
+          <li class="flex items-center gap-3">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1E6FE0" stroke-width="2">
+              <rect x="3" y="3" width="18" height="18" rx="5" />
+              <circle cx="12" cy="12" r="4" />
+              <circle cx="17.5" cy="6.5" r="1" />
+            </svg>
+            <span>{contact.instagram}</span>
+          </li>
+        </ul>
+        <div class="mt-6">
+          <Placeholder
+            width={contact.map.width}
+            height={contact.map.height}
+            alt={contact.map.alt}
+            rounded
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,43 @@
+---
+import Placeholder from './Placeholder.astro';
+import type { Content } from '../i18n/utils';
+
+interface Props {
+  about: Content['about'];
+}
+
+const { about } = Astro.props;
+---
+
+<section id="nosotros" class="bg-cream py-20 md:py-24">
+  <div class="container-x">
+    <div class="mb-16 grid items-center gap-14 md:grid-cols-2">
+      <Placeholder
+        width={about.image.width}
+        height={about.image.height}
+        alt={about.image.alt}
+        rounded
+      />
+      <div>
+        <p class="eyebrow mb-3">{about.eyebrow}</p>
+        <h2 class="section-title mb-5">{about.title}</h2>
+        {about.paragraphs.map((p) => <p class="mb-4 text-[15px] text-muted">{p}</p>)}
+      </div>
+    </div>
+
+    <div class="grid grid-cols-2 gap-6 md:grid-cols-4">
+      {
+        about.stats.map((stat) => (
+          <div class="rounded-xl border border-line bg-white p-7 text-center">
+            <div class="font-display text-4xl font-bold text-accent md:text-[46px]">
+              {stat.value}
+            </div>
+            <div class="mt-1.5 font-display text-[13px] uppercase tracking-wide text-muted">
+              {stat.label}
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

@@ -1,0 +1,41 @@
+---
+import Placeholder from './Placeholder.astro';
+import type { Content } from '../i18n/utils';
+
+interface Props {
+  classes: Content['classes'];
+}
+
+const { classes } = Astro.props;
+---
+
+<section id="clases" class="bg-cream py-20 md:py-24">
+  <div class="container-x">
+    <div class="mx-auto mb-14 max-w-2xl text-center">
+      <p class="eyebrow mb-3">{classes.eyebrow}</p>
+      <h2 class="section-title mb-4">{classes.title}</h2>
+      <p class="text-muted">{classes.intro}</p>
+    </div>
+
+    <div class="grid gap-7 md:grid-cols-3">
+      {
+        classes.items.map((item) => (
+          <article class="overflow-hidden rounded-xl border border-line bg-white">
+            <Placeholder width={item.image.width} height={item.image.height} alt={item.image.alt} />
+            <div class="p-6">
+              <h3 class="mb-2 text-2xl uppercase">{item.title}</h3>
+              <p class="mb-4 text-[15px] text-muted">{item.description}</p>
+              <p class="mb-4 font-display text-xl font-bold text-ink">{item.price}</p>
+              <a
+                href="#contacto"
+                class="font-display text-sm font-semibold uppercase tracking-wide text-accent hover:text-accent-hover"
+              >
+                {item.cta} →
+              </a>
+            </div>
+          </article>
+        ))
+      }
+    </div>
+  </div>
+</section>

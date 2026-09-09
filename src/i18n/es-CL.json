@@ -1,0 +1,114 @@
+{
+  "meta": {
+    "title": "Ride MTB — Experiencias, clases y bikecamps de mountain bike",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Experiencias, clases y bikecamps enfocados en mountain bike."
+  },
+  "nav": {
+    "brand": "RIDE MTB",
+    "cta": "Reservar",
+    "links": [
+      { "id": "inicio", "label": "Inicio" },
+      { "id": "clases", "label": "Clases" },
+      { "id": "bikecamps", "label": "Bikecamps" },
+      { "id": "nosotros", "label": "Nosotros" },
+      { "id": "contacto", "label": "Contacto" }
+    ]
+  },
+  "hero": {
+    "eyebrow": "Experiencias · Clases · Bikecamps",
+    "title": "Lorem ipsum dolor sit amet mountain",
+    "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "ctaPrimary": "Reservar ahora",
+    "ctaSecondary": "Ver experiencias",
+    "image": { "width": 1440, "height": 620, "alt": "Imagen principal" }
+  },
+  "classes": {
+    "eyebrow": "Clases",
+    "title": "Aprende a rodar mejor",
+    "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+    "items": [
+      {
+        "title": "Clase grupal",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod.",
+        "price": "$30.000",
+        "cta": "Ver clase",
+        "image": { "width": 420, "height": 200, "alt": "Clase grupal" }
+      },
+      {
+        "title": "Fundamental",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod.",
+        "price": "$100.000",
+        "cta": "Ver clase",
+        "image": { "width": 420, "height": 200, "alt": "Clase fundamental" }
+      },
+      {
+        "title": "Kids",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod.",
+        "price": "$100.000",
+        "cta": "Ver clase",
+        "image": { "width": 420, "height": 200, "alt": "Clase kids" }
+      }
+    ]
+  },
+  "bikecamps": {
+    "eyebrow": "Bikecamps",
+    "title": "Vive la montaña",
+    "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+    "items": [
+      {
+        "meta": "Chile · Enero 2026",
+        "title": "Summer camp lorem",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+        "cta": "Ver bikecamp",
+        "image": { "width": 640, "height": 300, "alt": "Summer camp" }
+      },
+      {
+        "meta": "Whistler · Julio 2026",
+        "title": "Camp Whistler lorem",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+        "cta": "Ver bikecamp",
+        "image": { "width": 640, "height": 300, "alt": "Camp Whistler" }
+      }
+    ]
+  },
+  "about": {
+    "eyebrow": "Nosotros",
+    "title": "Amor por la montaña",
+    "paragraphs": [
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+      "Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure."
+    ],
+    "image": { "width": 620, "height": 420, "alt": "Sobre nosotros" },
+    "stats": [
+      { "value": "20+", "label": "Años experiencia" },
+      { "value": "500+", "label": "Riders" },
+      { "value": "12", "label": "Bikecamps" },
+      { "value": "4.9", "label": "Valoración" }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Contacto",
+    "title": "Hablemos",
+    "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor.",
+    "form": {
+      "name": "Nombre",
+      "email": "Email",
+      "message": "Mensaje",
+      "submit": "Enviar mensaje"
+    },
+    "infoTitle": "Datos de contacto",
+    "email": "hola@ridemtb.cl",
+    "phone": "+56 9 1234 5678",
+    "instagram": "@ridemtb",
+    "map": { "width": 380, "height": 150, "alt": "Mapa de ubicación" }
+  },
+  "footer": {
+    "brand": "RIDE MTB",
+    "tagline": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "columns": [
+      ["Inicio", "Clases", "Bikecamps"],
+      ["Nosotros", "Contacto"]
+    ],
+    "copyright": "© 2026 Ride MTB. Todos los derechos reservados."
+  }
+}

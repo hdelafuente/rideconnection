@@ -1,0 +1,45 @@
+---
+import type { Content } from '../i18n/utils';
+
+interface Props {
+  footer: Content['footer'];
+}
+
+const { footer } = Astro.props;
+---
+
+<footer class="bg-ink pb-9 pt-14">
+  <div class="container-x">
+    <div
+      class="flex flex-wrap items-start justify-between gap-8 border-b border-surface-dark pb-8"
+    >
+      <div class="max-w-xs">
+        <div class="mb-3.5 flex items-center gap-2.5">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1E6FE0" stroke-width="2">
+            <path d="M3 18l5-9 4 6 3-4 6 7z" />
+          </svg>
+          <span class="font-display text-lg font-bold uppercase tracking-[0.15em] text-white">
+            {footer.brand}
+          </span>
+        </div>
+        <p class="text-sm leading-relaxed text-white/50">{footer.tagline}</p>
+      </div>
+
+      <div class="flex gap-16">
+        {
+          footer.columns.map((column) => (
+            <ul class="flex flex-col gap-3">
+              {column.map((label) => (
+                <li>
+                  <span class="nav-link text-white/50">{label}</span>
+                </li>
+              ))}
+            </ul>
+          ))
+        }
+      </div>
+    </div>
+
+    <p class="pt-5 text-[13px] text-white/40">{footer.copyright}</p>
+  </div>
+</footer>

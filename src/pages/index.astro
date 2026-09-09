@@ -1,0 +1,25 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import Classes from '../components/Classes.astro';
+import Bikecamps from '../components/Bikecamps.astro';
+import About from '../components/About.astro';
+import Contact from '../components/Contact.astro';
+import Footer from '../components/Footer.astro';
+import { getContent, defaultLocale } from '../i18n/utils';
+
+const t = getContent(defaultLocale);
+---
+
+<BaseLayout title={t.meta.title} description={t.meta.description} lang={defaultLocale}>
+  <Header nav={t.nav} />
+  <main>
+    <Hero hero={t.hero} />
+    <Classes classes={t.classes} />
+    <Bikecamps bikecamps={t.bikecamps} />
+    <About about={t.about} />
+    <Contact contact={t.contact} />
+  </main>
+  <Footer footer={t.footer} />
+</BaseLayout>

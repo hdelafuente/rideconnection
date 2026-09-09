@@ -1,0 +1,10 @@
+{
+  "artboards": [
+    { "file": "Main.dc.html", "x": 0, "y": 0, "w": 1440, "h": 3880, "title": "Escritorio" },
+    { "file": "Mobile.dc.html", "x": 1560, "y": 0, "w": 390, "h": 1140, "title": "Móvil" }
+  ],
+  "annotations": [
+    { "id": "note-direction", "x": 0, "y": -150, "w": 620, "text": "Ride MTB — propuesta de diseño\nNegros / grises / blanco con azul #1E6FE0 · Oswald + Inter · imágenes en gris, textos lorem."}
+  ],
+  "launch": { "view": "canvas" }
+}

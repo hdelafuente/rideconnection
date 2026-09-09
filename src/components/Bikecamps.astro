@@ -1,0 +1,43 @@
+---
+import Placeholder from './Placeholder.astro';
+import type { Content } from '../i18n/utils';
+
+interface Props {
+  bikecamps: Content['bikecamps'];
+}
+
+const { bikecamps } = Astro.props;
+---
+
+<section id="bikecamps" class="bg-ink py-20 md:py-24">
+  <div class="container-x">
+    <div class="mb-14 max-w-2xl">
+      <p class="eyebrow mb-3">{bikecamps.eyebrow}</p>
+      <h2 class="section-title mb-4 text-white">{bikecamps.title}</h2>
+      <p class="text-[15px] text-white/70">{bikecamps.intro}</p>
+    </div>
+
+    <div class="grid gap-8 md:grid-cols-2">
+      {
+        bikecamps.items.map((item) => (
+          <article class="overflow-hidden rounded-2xl border border-surface-dark bg-surface-dark">
+            <Placeholder
+              width={item.image.width}
+              height={item.image.height}
+              alt={item.image.alt}
+              dark
+            />
+            <div class="p-8">
+              <p class="mb-2.5 font-display text-xs uppercase tracking-[0.15em] text-accent">
+                {item.meta}
+              </p>
+              <h3 class="mb-3 text-2xl uppercase text-white md:text-[28px]">{item.title}</h3>
+              <p class="mb-6 text-[15px] leading-relaxed text-white/70">{item.description}</p>
+              <a href="#contacto" class="btn btn-primary">{item.cta}</a>
+            </div>
+          </article>
+        ))
+      }
+    </div>
+  </div>
+</section>

@@ -1,0 +1,222 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap">
+  <style>
+    body { margin: 0; font-family: 'Inter', system-ui, sans-serif; color: #1A1A1A; background: #FAFAFA; }
+    h1,h2,h3,h4 { font-family: 'Oswald', system-ui, sans-serif; margin: 0; font-weight: 600; letter-spacing: .5px; }
+    p { margin: 0; line-height: 1.7; }
+    a { color: #1E6FE0; text-decoration: none; }
+    a:hover { color: #1655B8; }
+    .ph { position: relative; background: #DADADA; border: 1px solid #C9C9C9; display: flex; align-items: center; justify-content: center; color: #8A8A90; font-family: 'Inter', sans-serif; font-size: 13px; overflow: hidden; }
+    .ph svg { position: absolute; opacity: .35; }
+    .eyebrow { font-family: 'Oswald', sans-serif; text-transform: uppercase; letter-spacing: 3px; font-size: 13px; font-weight: 600; color: #1E6FE0; }
+    .btn { font-family: 'Oswald', sans-serif; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; font-size: 14px; padding: 14px 28px; border-radius: 6px; display: inline-block; cursor: pointer; }
+    .btn-primary { background: #1E6FE0; color: #fff; border: 2px solid #1E6FE0; }
+    .btn-outline { background: transparent; color: #F5F5F5; border: 2px solid rgba(245,245,245,.6); }
+    .btn-dark { background: #141416; color: #fff; border: 2px solid #141416; }
+    .nav-link { font-family: 'Oswald', sans-serif; text-transform: uppercase; letter-spacing: 1.5px; font-size: 14px; color: #F5F5F5; font-weight: 500; }
+    .card { background: #fff; border-radius: 12px; overflow: hidden; border: 1px solid #E4E4E4; }
+    .lorem { color: #55555A; font-size: 15px; }
+  </style>
+</helmet>
+
+<div style="width: 1440px; background: #FAFAFA;">
+
+  <!-- HEADER -->
+  <div style="height: 76px; background: #141416; display: flex; align-items: center; justify-content: space-between; padding: 0 56px;">
+    <div style="display: flex; align-items: center; gap: 12px;">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#1E6FE0" stroke-width="2"><path d="M3 18l5-9 4 6 3-4 6 7z"/><circle cx="6" cy="18" r="0"/></svg>
+      <span style="font-family: 'Oswald'; font-weight: 700; font-size: 22px; color: #F5F5F5; letter-spacing: 2px;">RIDE MTB</span>
+    </div>
+    <div style="display: flex; align-items: center; gap: 34px;">
+      <span class="nav-link" style="color:#1E6FE0;">Inicio</span>
+      <span class="nav-link">Clases</span>
+      <span class="nav-link">Bikecamps</span>
+      <span class="nav-link">Nosotros</span>
+      <span class="nav-link">Contacto</span>
+    </div>
+    <div class="btn btn-primary" style="padding: 11px 22px;">Reservar</div>
+  </div>
+
+  <!-- HERO -->
+  <div class="ph" style="height: 620px; border: none; background: #202024; align-items: stretch;">
+    <div style="position:absolute; inset:0; display:flex; align-items:center; justify-content:center;">
+      <svg width="90" height="90" viewBox="0 0 24 24" fill="none" stroke="#3A3A40" stroke-width="1.5"><path d="M3 18l5-9 4 6 3-4 6 7z"/><circle cx="8" cy="6" r="2"/></svg>
+    </div>
+    <div style="position:absolute; top:16px; left:16px; color:#55555C; font-size:12px;">Imagen hero 1440 × 620</div>
+    <div style="position: absolute; inset: 0; background: linear-gradient(90deg, rgba(18,18,20,.85), rgba(18,18,20,.35));"></div>
+    <div style="position: relative; z-index: 2; max-width: 640px; align-self: center; padding: 0 80px;">
+      <div class="eyebrow" style="margin-bottom: 18px;">Experiencias · Clases · Bikecamps</div>
+      <h1 style="font-size: 62px; line-height: 1.05; color: #F5F5F5; margin-bottom: 22px;">LOREM IPSUM DOLOR SIT AMET MOUNTAIN</h1>
+      <p style="color: #C9C9CE; font-size: 18px; margin-bottom: 34px; max-width: 520px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <div style="display: flex; gap: 16px;">
+        <div class="btn btn-primary">Reservar ahora</div>
+        <div class="btn btn-outline">Ver experiencias</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CLASES -->
+  <div style="padding: 90px 80px; background: #FAFAFA;">
+    <div style="text-align: center; max-width: 640px; margin: 0 auto 54px;">
+      <div class="eyebrow" style="margin-bottom: 14px;">Clases</div>
+      <h2 style="font-size: 42px; margin-bottom: 16px;">APRENDE A RODAR MEJOR</h2>
+      <p class="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 28px;">
+      <div class="card">
+        <div class="ph" style="height: 200px;">Imagen 420 × 200</div>
+        <div style="padding: 26px;">
+          <h3 style="font-size: 24px; margin-bottom: 10px;">CLASE GRUPAL</h3>
+          <p class="lorem" style="margin-bottom: 18px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod.</p>
+          <div style="font-family:'Oswald'; font-size: 22px; color:#141416; font-weight:700; margin-bottom: 16px;">$30.000</div>
+          <a style="font-family:'Oswald'; letter-spacing:1px; text-transform:uppercase; font-size:14px; font-weight:600;">Ver clase →</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="ph" style="height: 200px;">Imagen 420 × 200</div>
+        <div style="padding: 26px;">
+          <h3 style="font-size: 24px; margin-bottom: 10px;">FUNDAMENTAL</h3>
+          <p class="lorem" style="margin-bottom: 18px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod.</p>
+          <div style="font-family:'Oswald'; font-size: 22px; color:#141416; font-weight:700; margin-bottom: 16px;">$100.000</div>
+          <a style="font-family:'Oswald'; letter-spacing:1px; text-transform:uppercase; font-size:14px; font-weight:600;">Ver clase →</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="ph" style="height: 200px;">Imagen 420 × 200</div>
+        <div style="padding: 26px;">
+          <h3 style="font-size: 24px; margin-bottom: 10px;">KIDS</h3>
+          <p class="lorem" style="margin-bottom: 18px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod.</p>
+          <div style="font-family:'Oswald'; font-size: 22px; color:#141416; font-weight:700; margin-bottom: 16px;">$100.000</div>
+          <a style="font-family:'Oswald'; letter-spacing:1px; text-transform:uppercase; font-size:14px; font-weight:600;">Ver clase →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- BIKECAMPS -->
+  <div style="padding: 90px 80px; background: #141416;">
+    <div style="max-width: 640px; margin: 0 0 54px;">
+      <div class="eyebrow" style="margin-bottom: 14px;">Bikecamps</div>
+      <h2 style="font-size: 42px; margin-bottom: 16px; color: #F5F5F5;">VIVE LA MONTAÑA</h2>
+      <p style="color:#A5A5AD; font-size:15px; line-height:1.7;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 32px;">
+      <div style="background:#1C1C1F; border-radius:14px; overflow:hidden; border:1px solid #2C2C30;">
+        <div class="ph" style="height: 300px; background:#26262A; border:none; color:#55555C;">Imagen 640 × 300</div>
+        <div style="padding: 32px;">
+          <div style="font-family:'Oswald'; text-transform:uppercase; letter-spacing:2px; font-size:12px; color:#1E6FE0; margin-bottom:10px;">Chile · Enero 2026</div>
+          <h3 style="font-size: 28px; color:#F5F5F5; margin-bottom: 12px;">SUMMER CAMP LOREM</h3>
+          <p style="color:#A5A5AD; font-size:15px; line-height:1.7; margin-bottom: 22px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+          <div class="btn btn-primary">Ver bikecamp</div>
+        </div>
+      </div>
+      <div style="background:#1C1C1F; border-radius:14px; overflow:hidden; border:1px solid #2C2C30;">
+        <div class="ph" style="height: 300px; background:#26262A; border:none; color:#55555C;">Imagen 640 × 300</div>
+        <div style="padding: 32px;">
+          <div style="font-family:'Oswald'; text-transform:uppercase; letter-spacing:2px; font-size:12px; color:#1E6FE0; margin-bottom:10px;">Whistler · Julio 2026</div>
+          <h3 style="font-size: 28px; color:#F5F5F5; margin-bottom: 12px;">CAMP WHISTLER LOREM</h3>
+          <p style="color:#A5A5AD; font-size:15px; line-height:1.7; margin-bottom: 22px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+          <div class="btn btn-primary">Ver bikecamp</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- NOSOTROS -->
+  <div style="padding: 90px 80px; background: #FAFAFA;">
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; margin-bottom: 64px;">
+      <div class="ph" style="height: 420px; border-radius: 12px;">Imagen 620 × 420</div>
+      <div>
+        <div class="eyebrow" style="margin-bottom: 14px;">Nosotros</div>
+        <h2 style="font-size: 42px; margin-bottom: 20px;">AMOR POR LA MONTAÑA</h2>
+        <p class="lorem" style="margin-bottom: 18px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        <p class="lorem">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure.</p>
+      </div>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 24px;">
+      <div style="text-align:center; padding: 28px; background:#fff; border-radius:12px; border:1px solid #E4E4E4;">
+        <div style="font-family:'Oswald'; font-size: 46px; font-weight:700; color:#1E6FE0;">20+</div>
+        <div style="font-family:'Oswald'; text-transform:uppercase; letter-spacing:1.5px; font-size:13px; color:#55555A; margin-top:6px;">Años experiencia</div>
+      </div>
+      <div style="text-align:center; padding: 28px; background:#fff; border-radius:12px; border:1px solid #E4E4E4;">
+        <div style="font-family:'Oswald'; font-size: 46px; font-weight:700; color:#1E6FE0;">500+</div>
+        <div style="font-family:'Oswald'; text-transform:uppercase; letter-spacing:1.5px; font-size:13px; color:#55555A; margin-top:6px;">Riders</div>
+      </div>
+      <div style="text-align:center; padding: 28px; background:#fff; border-radius:12px; border:1px solid #E4E4E4;">
+        <div style="font-family:'Oswald'; font-size: 46px; font-weight:700; color:#1E6FE0;">12</div>
+        <div style="font-family:'Oswald'; text-transform:uppercase; letter-spacing:1.5px; font-size:13px; color:#55555A; margin-top:6px;">Bikecamps</div>
+      </div>
+      <div style="text-align:center; padding: 28px; background:#fff; border-radius:12px; border:1px solid #E4E4E4;">
+        <div style="font-family:'Oswald'; font-size: 46px; font-weight:700; color:#1E6FE0;">4.9</div>
+        <div style="font-family:'Oswald'; text-transform:uppercase; letter-spacing:1.5px; font-size:13px; color:#55555A; margin-top:6px;">Valoración</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTACTO -->
+  <div style="padding: 90px 80px; background: #F1F1F0;">
+    <div style="text-align:center; max-width: 620px; margin: 0 auto 48px;">
+      <div class="eyebrow" style="margin-bottom: 14px;">Contacto</div>
+      <h2 style="font-size: 42px; margin-bottom: 16px;">HABLEMOS</h2>
+      <p class="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor.</p>
+    </div>
+    <div style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 40px; background:#fff; border-radius:16px; padding: 44px; border:1px solid #E4E4E4;">
+      <div>
+        <div style="display:flex; gap:16px; margin-bottom:18px;">
+          <div style="flex:1;"><label style="font-family:'Oswald'; font-size:13px; text-transform:uppercase; letter-spacing:1px; color:#55555A;">Nombre</label><div style="height:46px; border:1px solid #DDDDDD; border-radius:8px; margin-top:8px; background:#FAFAFA;"></div></div>
+          <div style="flex:1;"><label style="font-family:'Oswald'; font-size:13px; text-transform:uppercase; letter-spacing:1px; color:#55555A;">Email</label><div style="height:46px; border:1px solid #DDDDDD; border-radius:8px; margin-top:8px; background:#FAFAFA;"></div></div>
+        </div>
+        <label style="font-family:'Oswald'; font-size:13px; text-transform:uppercase; letter-spacing:1px; color:#55555A;">Mensaje</label>
+        <div style="height:130px; border:1px solid #DDDDDD; border-radius:8px; margin-top:8px; margin-bottom:22px; background:#FAFAFA;"></div>
+        <div class="btn btn-dark">Enviar mensaje</div>
+      </div>
+      <div style="border-left:1px solid #ECECEC; padding-left:40px;">
+        <h4 style="font-size:20px; margin-bottom:20px;">DATOS DE CONTACTO</h4>
+        <div style="display:flex; align-items:center; gap:12px; margin-bottom:16px; color:#55555A; font-size:15px;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1E6FE0" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg> hola@ridemtb.cl</div>
+        <div style="display:flex; align-items:center; gap:12px; margin-bottom:16px; color:#55555A; font-size:15px;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1E6FE0" stroke-width="2"><path d="M5 4h4l2 5-3 2a11 11 0 005 5l2-3 5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></svg> +56 9 1234 5678</div>
+        <div style="display:flex; align-items:center; gap:12px; margin-bottom:24px; color:#55555A; font-size:15px;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1E6FE0" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg> @ridemtb</div>
+        <div class="ph" style="height:150px; border-radius:10px;">Mapa 380 × 150</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div style="background:#141416; padding: 54px 80px 34px;">
+    <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:32px; padding-bottom:32px; border-bottom:1px solid #2C2C30;">
+      <div style="max-width:300px;">
+        <div style="display:flex; align-items:center; gap:10px; margin-bottom:14px;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1E6FE0" stroke-width="2"><path d="M3 18l5-9 4 6 3-4 6 7z"/></svg>
+          <span style="font-family:'Oswald'; font-weight:700; font-size:20px; color:#F5F5F5; letter-spacing:2px;">RIDE MTB</span>
+        </div>
+        <p style="color:#8A8A90; font-size:14px; line-height:1.7;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div style="display:flex; gap:64px;">
+        <div style="display:flex; flex-direction:column; gap:12px;">
+          <span class="nav-link" style="color:#8A8A90;">Inicio</span>
+          <span class="nav-link" style="color:#8A8A90;">Clases</span>
+          <span class="nav-link" style="color:#8A8A90;">Bikecamps</span>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:12px;">
+          <span class="nav-link" style="color:#8A8A90;">Nosotros</span>
+          <span class="nav-link" style="color:#8A8A90;">Contacto</span>
+        </div>
+      </div>
+    </div>
+    <div style="padding-top:22px; color:#6B6B70; font-size:13px;">© 2026 Ride MTB. Todos los derechos reservados.</div>
+  </div>
+
+</div>
+</x-dc>
+</body>
+</html>

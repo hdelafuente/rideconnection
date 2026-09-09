@@ -1,0 +1,41 @@
+---
+import Placeholder from './Placeholder.astro';
+import type { Content } from '../i18n/utils';
+
+interface Props {
+  hero: Content['hero'];
+}
+
+const { hero } = Astro.props;
+---
+
+<section id="inicio" class="relative min-h-[620px] overflow-hidden bg-surface-darker">
+  <div class="absolute inset-0">
+    <Placeholder
+      width={hero.image.width}
+      height={hero.image.height}
+      alt={hero.image.alt}
+      dark
+      class="h-full w-full !aspect-auto"
+    />
+  </div>
+  <div
+    class="absolute inset-0"
+    style="background: linear-gradient(90deg, rgba(18,18,20,.85), rgba(18,18,20,.35));"
+  >
+  </div>
+
+  <div class="container-x relative z-10 flex min-h-[620px] items-center">
+    <div class="max-w-2xl py-20">
+      <p class="eyebrow mb-4">{hero.eyebrow}</p>
+      <h1 class="mb-5 text-5xl uppercase leading-[1.05] text-white md:text-6xl">
+        {hero.title}
+      </h1>
+      <p class="mb-8 max-w-xl text-lg text-white/80">{hero.subtitle}</p>
+      <div class="flex flex-wrap gap-4">
+        <a href="#contacto" class="btn btn-primary">{hero.ctaPrimary}</a>
+        <a href="#bikecamps" class="btn btn-outline">{hero.ctaSecondary}</a>
+      </div>
+    </div>
+  </div>
+</section>
