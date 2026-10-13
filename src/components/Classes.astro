@@ -17,11 +17,17 @@ const { classes } = Astro.props;
       <p class="text-muted">{classes.intro}</p>
     </div>
 
-    <div class="grid gap-7 md:grid-cols-3">
+    <div class="flex flex-wrap justify-center gap-7">
       {
         classes.items.map((item) => (
-          <article class="overflow-hidden rounded-xl border border-line bg-white">
-            <Placeholder width={item.image.width} height={item.image.height} alt={item.image.alt} />
+          <article class="w-full overflow-hidden rounded-xl border border-line bg-white sm:w-[340px]">
+            <Placeholder
+              width={item.image.width}
+              height={item.image.height}
+              alt={item.image.alt}
+              src={item.image.src}
+              imgClass={item.image.imgClass}
+            />
             <div class="p-6">
               <h3 class="mb-2 text-2xl uppercase">{item.title}</h3>
               <p class="mb-4 text-[15px] text-muted">{item.description}</p>

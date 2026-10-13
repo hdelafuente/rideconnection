@@ -16,6 +16,7 @@ const { about } = Astro.props;
         width={about.image.width}
         height={about.image.height}
         alt={about.image.alt}
+        src={about.image.src}
         rounded
       />
       <div>
@@ -25,7 +26,7 @@ const { about } = Astro.props;
       </div>
     </div>
 
-    <div class="grid grid-cols-2 gap-6 md:grid-cols-4">
+    <div class="grid grid-cols-1 gap-6 sm:grid-cols-3">
       {
         about.stats.map((stat) => (
           <div class="rounded-xl border border-line bg-white p-7 text-center">

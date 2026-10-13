@@ -4,8 +4,8 @@
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Experiencias, clases y bikecamps enfocados en mountain bike."
   },
   "nav": {
-    "brand": "RIDE MTB",
-    "cta": "Reservar",
+    "brand": "RIDECONNECTION",
+    "cta": "Contacto",
     "links": [
       { "id": "inicio", "label": "Inicio" },
       { "id": "clases", "label": "Clases" },
@@ -16,11 +16,11 @@
   },
   "hero": {
     "eyebrow": "Experiencias · Clases · Bikecamps",
-    "title": "Lorem ipsum dolor sit amet mountain",
-    "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "ctaPrimary": "Reservar ahora",
+    "title": "MTB con técnica y desarrollo personal",
+    "subtitle": "Somos una escuela que busca conectar a las parsonas con la bicicleta, la naturaleza y consigo.",
+    "ctaPrimary": "Inscribete ahora",
     "ctaSecondary": "Ver experiencias",
-    "image": { "width": 1440, "height": 620, "alt": "Imagen principal" }
+    "image": { "src": "hero.jpg", "width": 1440, "height": 620, "alt": "Rider descendiendo por terreno rocoso con la ciudad al fondo" }
   },
   "classes": {
     "eyebrow": "Clases",
@@ -29,45 +29,38 @@
     "items": [
       {
         "title": "Clase grupal",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod.",
-        "price": "$30.000",
+        "description": "1 vez por semana los domingos (max. 5 personas por grupo)",
+        "price": "$99.990",
         "cta": "Ver clase",
-        "image": { "width": 420, "height": 200, "alt": "Clase grupal" }
+        "image": { "src": "clase-grupal.jpg", "width": 420, "height": 200, "alt": "Grupo rodando por un camino de montaña", "imgClass": "object-bottom" }
       },
       {
-        "title": "Fundamental",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod.",
-        "price": "$100.000",
+        "title": "Individual",
+        "description": "1 ver por semana, día a coordinar según disponibilidad",
+        "price": "$179.990",
         "cta": "Ver clase",
-        "image": { "width": 420, "height": 200, "alt": "Clase fundamental" }
-      },
-      {
-        "title": "Kids",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod.",
-        "price": "$100.000",
-        "cta": "Ver clase",
-        "image": { "width": 420, "height": 200, "alt": "Clase kids" }
+        "image": { "src": "clase-individual.jpg", "width": 420, "height": 200, "alt": "Dos riders avanzando por un sendero de montaña", "imgClass": "object-center" }
       }
     ]
   },
   "bikecamps": {
     "eyebrow": "Bikecamps",
-    "title": "Vive la montaña",
-    "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+    "title": "Vive el mtb en distintos lugares de Chile",
+    "intro": "",
     "items": [
       {
         "meta": "Chile · Enero 2026",
-        "title": "Summer camp lorem",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+        "title": "Chillan",
+        "description": "1 día de enduro y 3 día bikepark en el valle las Trancas, Región del Ñuble",
         "cta": "Ver bikecamp",
-        "image": { "width": 640, "height": 300, "alt": "Summer camp" }
+        "image": { "src": "bikecamp-chillan.jpg", "width": 640, "height": 300, "alt": "Grupo de riders junto a las fumarolas del volcán en Chillán" }
       },
       {
-        "meta": "Whistler · Julio 2026",
-        "title": "Camp Whistler lorem",
+        "meta": "Bike & Dive . Octubre 2026",
+        "title": "Camp de buceo y mtb",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
         "cta": "Ver bikecamp",
-        "image": { "width": 640, "height": 300, "alt": "Camp Whistler" }
+        "image": { "src": "bikecamp-bikedive.jpg", "width": 640, "height": 300, "alt": "Bicicleta frente a un lago, vista panorámica" }
       }
     ]
   },
@@ -78,12 +71,11 @@
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
       "Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure."
     ],
-    "image": { "width": 620, "height": 420, "alt": "Sobre nosotros" },
+    "image": { "src": "nosotros.jpg", "width": 620, "height": 420, "alt": "Grupo de riders al atardecer con un instructor" },
     "stats": [
-      { "value": "20+", "label": "Años experiencia" },
-      { "value": "500+", "label": "Riders" },
-      { "value": "12", "label": "Bikecamps" },
-      { "value": "4.9", "label": "Valoración" }
+      { "value": "10", "label": "Años de experiencia" },
+      { "value": "+100", "label": "Riders contentos" },
+      { "value": "5", "label": "Años realizando bikecamps" }
     ]
   },
   "contact": {
@@ -97,18 +89,18 @@
       "submit": "Enviar mensaje"
     },
     "infoTitle": "Datos de contacto",
-    "email": "hola@ridemtb.cl",
-    "phone": "+56 9 1234 5678",
-    "instagram": "@ridemtb",
+    "email": "rideconnectionmtb@gmail.com",
+    "phone": "+56 9 8701 3743",
+    "instagram": "@rideconnection_mtb",
     "map": { "width": 380, "height": 150, "alt": "Mapa de ubicación" }
   },
   "footer": {
-    "brand": "RIDE MTB",
+    "brand": "RIDECONNECTION",
     "tagline": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "columns": [
       ["Inicio", "Clases", "Bikecamps"],
       ["Nosotros", "Contacto"]
     ],
-    "copyright": "© 2026 Ride MTB. Todos los derechos reservados."
+    "copyright": "© 2026 Ride Connection. Todos los derechos reservados."
   }
 }

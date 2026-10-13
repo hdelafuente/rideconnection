@@ -15,8 +15,10 @@ const { hero } = Astro.props;
       width={hero.image.width}
       height={hero.image.height}
       alt={hero.image.alt}
+      src={hero.image.src}
       dark
-      class="h-full w-full !aspect-auto"
+      fill
+      class="h-full w-full"
     />
   </div>
   <div
