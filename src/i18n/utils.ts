@@ -19,3 +19,12 @@ const content: Record<Locale, Content> = {
 export function getContent(locale: Locale = defaultLocale): Content {
   return content[locale] ?? content[defaultLocale];
 }
+
+/**
+ * Construye un enlace a WhatsApp con mensaje precargado.
+ * `number` en formato internacional sin "+" ni espacios (ej. 56987013743).
+ */
+export function whatsappUrl(number: string, message: string): string {
+  const clean = number.replace(/[^\d]/g, '');
+  return `https://wa.me/${clean}?text=${encodeURIComponent(message)}`;
+}

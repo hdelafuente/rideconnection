@@ -3,6 +3,10 @@
     "title": "Ride MTB — Experiencias, clases y bikecamps de mountain bike",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Experiencias, clases y bikecamps enfocados en mountain bike."
   },
+  "whatsapp": {
+    "number": "56987013743",
+    "floatingMessage": "Hola! me gustaría saber más de Ride Connection"
+  },
   "nav": {
     "brand": "RIDECONNECTION",
     "cta": "Contacto",
@@ -32,6 +36,7 @@
         "description": "1 vez por semana los domingos (max. 5 personas por grupo)",
         "price": "$99.990",
         "cta": "Ver clase",
+        "whatsappName": "grupal",
         "image": { "src": "clase-grupal.jpg", "width": 420, "height": 200, "alt": "Grupo rodando por un camino de montaña", "imgClass": "object-bottom" }
       },
       {
@@ -39,6 +44,7 @@
         "description": "1 ver por semana, día a coordinar según disponibilidad",
         "price": "$179.990",
         "cta": "Ver clase",
+        "whatsappName": "individual",
         "image": { "src": "clase-individual.jpg", "width": 420, "height": 200, "alt": "Dos riders avanzando por un sendero de montaña", "imgClass": "object-center" }
       }
     ]

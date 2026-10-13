@@ -7,6 +7,7 @@ import Bikecamps from '../components/Bikecamps.astro';
 import About from '../components/About.astro';
 import Contact from '../components/Contact.astro';
 import Footer from '../components/Footer.astro';
+import WhatsappFab from '../components/WhatsappFab.astro';
 import { getContent, defaultLocale } from '../i18n/utils';
 
 const t = getContent(defaultLocale);
@@ -16,10 +17,11 @@ const t = getContent(defaultLocale);
   <Header nav={t.nav} />
   <main>
     <Hero hero={t.hero} />
-    <Classes classes={t.classes} />
-    <Bikecamps bikecamps={t.bikecamps} />
+    <Classes classes={t.classes} whatsappNumber={t.whatsapp.number} />
+    <Bikecamps bikecamps={t.bikecamps} whatsappNumber={t.whatsapp.number} />
     <About about={t.about} />
     <Contact contact={t.contact} />
   </main>
   <Footer footer={t.footer} />
+  <WhatsappFab number={t.whatsapp.number} message={t.whatsapp.floatingMessage} />
 </BaseLayout>

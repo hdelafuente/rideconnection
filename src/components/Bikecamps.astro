@@ -1,12 +1,13 @@
 ---
 import Placeholder from './Placeholder.astro';
-import type { Content } from '../i18n/utils';
+import { whatsappUrl, type Content } from '../i18n/utils';
 
 interface Props {
   bikecamps: Content['bikecamps'];
+  whatsappNumber: string;
 }
 
-const { bikecamps } = Astro.props;
+const { bikecamps, whatsappNumber } = Astro.props;
 ---
 
 <section id="bikecamps" class="bg-ink py-20 md:py-24">
@@ -34,7 +35,17 @@ const { bikecamps } = Astro.props;
               </p>
               <h3 class="mb-3 text-2xl uppercase text-white md:text-[28px]">{item.title}</h3>
               <p class="mb-6 text-[15px] leading-relaxed text-white/70">{item.description}</p>
-              <a href="#contacto" class="btn btn-primary">{item.cta}</a>
+              <a
+                href={whatsappUrl(
+                  whatsappNumber,
+                  `Hola! me gustaría saber más el bikecamp ${item.title}`,
+                )}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-primary"
+              >
+                {item.cta}
+              </a>
             </div>
           </article>
         ))
